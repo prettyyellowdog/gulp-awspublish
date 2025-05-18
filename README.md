@@ -282,6 +282,31 @@ gulp
 
 ## Examples
 
+### [Modify headers](examples/custom-headers.js)
+
+You can set custom HTTP headers on all files or individual files
+
+```js
+// see examples/custom-headers.js
+
+var headers = {
+  //
+  // This will be applied globally to all files
+  //
+  'Cache-Control': 'public, max-age=3600',
+  //
+  // These will be applied to specific files using the glob pattern
+  // and will replace matching global settings for that file
+  //
+  '**/*.js': { 'Cache-Control': 'public, max-age=2592000' },
+};
+
+gulp
+  .src('./examples/**/*')
+  .pipe(publisher.publish(headers))
+  .pipe(awspublish.reporter());
+```
+
 ### [Rename file & directory](examples/rename.js)
 
 You can use `gulp-rename` to rename your files on s3
