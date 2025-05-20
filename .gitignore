@@ -6,3 +6,4 @@ aws-credentials.json
 bad-aws-credentials.json
 .history/
 .idea/
+package-lock.json
