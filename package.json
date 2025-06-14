@@ -40,6 +40,7 @@
     "mime-types": "^2.1.35",
     "pascal-case": "^3.1.1",
     "plugin-error": "^2.0.1",
+    "tslib": "^2.8.1",
     "vinyl": "^3.0.0"
   },
   "devDependencies": {
