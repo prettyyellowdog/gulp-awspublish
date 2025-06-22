@@ -11,11 +11,9 @@ var headers = {
     //
     "Cache-Control": "public, max-age=3600",
     //
-    // These will be applied to specific files using the glob pattern
-    // and will replace matching global settings for that file
+    // To apply headers to specific files or patterns,
+    // see prettyyellowdog/gulp-awspublish-headers
     //
-    "**/*.js": { "Cache-Control": "public, max-age=2592000" },
-    "**/*.png": { "Cache-Control": "public, max-age=2592000" }
 };
 
 gulp
